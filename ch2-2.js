@@ -16,4 +16,3 @@ for (var i = 1; i <= 100; i++) {
 }
 
 programBox.innerHTML = htmlCode;
-programBox.style = "height: 500px; overflow-y: scroll";

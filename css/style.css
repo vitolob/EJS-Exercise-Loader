@@ -1,0 +1,13 @@
+#programBox {
+	float: left;
+	width: 667px;
+	height: 500px;
+	overflow-y: scroll;
+	background-color: lightgrey;
+}
+
+#programControls {
+	float: left;
+	margin-left: 25px;
+	background-color: aqua;
+}

@@ -19,4 +19,3 @@ function boardMaker(size) {
 }
 
 programBox.innerHTML = boardMaker(8);
-programBox.style = "height: 500px; overflow-y: scroll";
