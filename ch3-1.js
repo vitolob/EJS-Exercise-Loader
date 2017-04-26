@@ -13,8 +13,6 @@ programBox.innerHTML = htmlCode;
 
 var actionForm = document.getElementById("actionForm");
 
-var teste;
-
 actionForm.addEventListener("submit", function(event) {
 	event.preventDefault();
 	num1 = Number(event.target.num1.value);
