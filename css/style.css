@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'Cinzel';
+	src: url('fonts/Cinzel-Regular.otf');
+}
+
+h1 {
+	font-family: 'Cinzel';
+}
+
 #programBox {
 	float: left;
 	width: 667px;
