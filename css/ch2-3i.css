@@ -1,0 +1,25 @@
+.cf {
+	clear: both;
+}
+
+.square {
+	float: left;
+	width: 55px;
+	height: 55px;
+}
+
+.odd .square {
+	background-color: black;
+}
+
+.odd .square:nth-of-type(even) {
+	background-color: white;
+}
+
+.even .square {
+	background-color: white;
+}
+
+.even .square:nth-of-type(even) {
+	background-color: black;
+}
