@@ -3,22 +3,40 @@
 <head>
 	<title>Exercise Loader</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="" id="mainStyle">
+	<link rel="stylesheet" type="text/css" href="" id="customStyle">
 </head>
 <body>
 	<h1>Eloquent JavaScript Exercises Loader</h1>
 	<div id="programBox"></div>
+
 	<div id="programControls">
-		<select>
-			<option>Select an exercise</option>
-			<option>2.1 Looping a triangle</option>
-			<option>2.2 FizzBuzz</option>
-			<option>2.3 Chess board</option>
-			<option>3.1 Minimum</option>
-			<option>3.2 Recursion</option>
-			<option>3.3 Bean counting</option>
-		</select>
+		<form id="chapterForm">
+			<select name="chapterSelect">
+				<option>Select an exercise</option>
+				<option value="ch2-1">2.1 Looping a triangle</option>
+				<option value="ch2-2">2.2 FizzBuzz</option>
+				<option value="ch2-3">2.3 Chess board</option>
+				<option value="ch3-1">3.1 Minimum</option>
+				<option value="ch3-2">3.2 Recursion</option>
+				<option value="ch3-3">3.3 Bean counting</option>
+			</select>
+			<button type="submit">Select</button>
+		</form>
 	</div>
-	<script type="text/javascript" src="ch3-3.js"></script>
+
+	<script type="text/javascript" src="" id="customScript"></script>
+	<script type="text/javascript">
+		var customScript = document.getElementById("customScript");
+		var chapterForm = document.getElementById("chapterForm");
+
+		chapterForm.addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			var selectedChapter = event.target.chapterSelect.value;
+			var scriptFile = selectedChapter + ".js";
+
+			customScript.src = scriptFile;
+		});
+	</script>
 </body>
 </html>

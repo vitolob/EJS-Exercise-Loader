@@ -1,6 +1,6 @@
 var htmlCode = "";
 var programBox = document.getElementById("programBox");
-var mainStyle = document.getElementById("mainStyle");
+var customStyle = document.getElementById("customStyle");
 
 function boardMaker(size) {
 
@@ -19,4 +19,4 @@ function boardMaker(size) {
 }
 
 programBox.innerHTML = boardMaker(8);
-mainStyle.href = "css/ch2-3i.css";
+customStyle.href = "css/ch2-3i.css";
